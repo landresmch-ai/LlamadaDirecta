@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="24dp" android:background="#0F1210">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="LLAMADA DIRECTA WiFi" android:textColor="#22FF88" android:textSize="22sp" android:textStyle="bold"/>
+    <TextView android:id="@+id/statusText" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="24dp" android:textColor="#FFFFFF" android:textSize="14sp"/>
+    <EditText android:id="@+id/ipInput" android:layout_width="match_parent" android:layout_height="50dp"
+        android:layout_marginTop="24dp" android:hint="IP del otro cel: 192.168.43.1"
+        android:background="#1E2420" android:textColor="#FFF" android:padding="12dp"/>
+    <Button android:id="@+id/btnCall" android:layout_width="match_parent" android:layout_height="70dp"
+        android:layout_marginTop="24dp" android:text="LLAMAR" android:textSize="18sp"
+        android:backgroundTint="#22FF88"/>
+    <Button android:id="@+id/btnSwapPort" android:layout_width="match_parent" android:layout_height="50dp"
+        android:layout_marginTop="12dp" android:text="¿Cuál IP usar?" android:backgroundTint="#333"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="32dp" android:text="NOTA: Celular A crea hotspot. Celular B se conecta. Uno llama a 192.168.43.1 puerto 50005, el otro debe tener puerto 50006. Si no se escuchan, inviertan los puertos en código (cambia portSend/portRecv)."
+        android:textColor="#888" android:textSize="11sp"/>
+</LinearLayout>
